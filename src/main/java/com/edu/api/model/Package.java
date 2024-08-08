@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
+@Table(name = "packages")
 public class Package {
 
     @Id
@@ -17,7 +18,7 @@ public class Package {
     @Setter
     @Getter
     @ManyToOne
-//    @JoinColumn(name = "group_id")
+    @JoinColumn(name = "id")
     private Group group;
 
 }
