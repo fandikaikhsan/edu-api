@@ -18,7 +18,7 @@ public class Package {
     @Setter
     @Getter
     @ManyToOne
-    @JoinColumn(name = "id")
+//    @JoinColumn(name = "id")
     private Group group;
 
 }
